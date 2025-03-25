@@ -34,13 +34,12 @@ jobs:
         run:
           echo Line 1
           echo Line 2
-
-    test:
-      needs: build
-      runs-on: ubuntu-latest
-      steps:
-        -name: Run tests
-        run: 
+test:
+    needs: build
+    runs-on: ubuntu-latest
+    steps:
+      - name: Run tests
+        run: |
           echo Running test after build...
           echo Add other actions to build,
           echo test, and deploy your project.
