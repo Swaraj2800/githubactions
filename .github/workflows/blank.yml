@@ -37,7 +37,7 @@ jobs:
       runs-on: ubuntu-latest
       steps:
         -name: Run tests
-          run: echo Running test after build...
-        run: |
+        run: 
+          echo Running test after build...
           echo Add other actions to build,
           echo test, and deploy your project.
